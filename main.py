@@ -48,6 +48,7 @@ def get_deltas(distance_matrix, rhos):
     deltas = np.zeros(n)
     nearest_neighbor = np.zeros(n)
     rhos_index = np.argsort(-rhos)
+    # 得到密度ρ从大到小的排序的索引
     for i, index in enumerate(rhos_index):
         if i == 0:
             continue
